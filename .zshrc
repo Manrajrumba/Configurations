@@ -2,7 +2,6 @@ alias ...="cd ../.."
 alias pip="sudo pip"
 alias doc="cd ~/Documents/"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-alias ip='ifconfig | grep inet | tail -1 | awk "/10./ {print \$2}"'
 alias pub="curl -L -s http://ipecho.net/plain | awk '{print $1}'"
 export PYTHONPATH="/Users/logpoint/Documents/Library/pyre2"
 export PATH="$PATH:/usr/local/bin/python"
