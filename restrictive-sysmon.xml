@@ -80,6 +80,8 @@
       <!-- Event ID 10 == ProcessAccess. Log everything except -->
       <ProcessAccess onmatch="exclude">
 	      <SourceImage condition="is">C:\Program Files\VMware\VMware Tools\vmtoolsd.exe</SourceImage>
+	      <SourceImage condition="is">C:\Windows\System32\VBoxService.exe</SourceImage>
+	      <SourceImage condition="is">C:\Windows\system32\svchost.exe</SourceImage>	      
 	      <SourceImage condition="is">C:\Windows\system32\taskeng.exe</SourceImage>
 	      <SourceImage condition="is">C:\Windows\system32\lsass.exe</SourceImage>
 	      <SourceImage condition="image">Sysmon.exe</SourceImage>
