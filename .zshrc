@@ -6,6 +6,11 @@ alias pub="curl -L -s http://ipecho.net/plain | awk '{print $1}'"
 export PYTHONPATH="/Users/logpoint/Documents/Library/pyre2"
 export PATH="$PATH:/usr/local/bin/python"
 alias nb="jupyter notebook"
+
+#For toggling view of Desktop Icons in Mac
+alias hide="defaults write com.apple.finder CreateDesktop false && killall Finder"
+alias show="defaults write com.apple.finder CreateDesktop True && killall Finder"
+
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # If you come from bash you might have to change your $PATH.
