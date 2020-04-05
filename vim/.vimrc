@@ -12,7 +12,7 @@ hi clear CursorLine
 hi CursorLine gui=underline cterm=underline	 
 set title				" Enable mouse for scrolling and resizing
 set mouse=a				" Set the window’s title to the file currently being edited
-nmap <C-n> :NERDTreeToggle<CR>	" Set Ctrl + N to toggle NerdTee
+nmap <C-b> :NERDTreeToggle<CR>	" Set Ctrl + N to toggle NerdTee
 map  <C-l> :tabn<CR>
 map  <C-h> :tabp<CR>
 map  <C-n> :tabnew<CR>
