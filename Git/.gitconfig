@@ -1,0 +1,41 @@
+# Put this in your ~/.gitconfig or ~/.config/git/config
+# Windows users: "~" is your profile's home directory, e.g. C:\Users\<YourName>
+[user]
+	name = bh4b3sh
+	email = bhabeshraj678@gmail.com
+[alias]
+	# List available aliases 
+	# Note: use -r if not in MacOS for sed.
+	alias = !git config --get-regexp alias | sed -Ee 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'		
+	# Command shortcuts
+	st = status
+	ci = commit
+  	co = checkout
+	br = branch
+	# Display tree-like log, because default log is a pain…
+  	lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+	# Undo last commit but keep changed files in stage
+  	uncommit = reset --soft HEAD~1
+[color]
+  # Enable colors in color-supporting terminals
+  ui = auto
+[grep]
+  break = true
+  heading = true
+  lineNumber = true
+  # Consider most regexes to be ERE
+  extendedRegexp = true
+[diff]
+  # Use better, descriptive initials (c, i, w) instead of a/b.
+  mnemonicPrefix = true
+  # Show renames/moves as such
+  renames = true
+  # When using --word-diff, assume --word-diff-regex=.
+  wordRegex = .
+  # Display submodule-related information (commit listings)
+  submodule = log
+  # Use VSCode as default diff tool when running `git diff-tool`
+  tool = vscode
+[color "branch"]
+# Blue on black is hard to read in git branch -vv: use cyan instead
+upstream = cyan
