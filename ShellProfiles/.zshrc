@@ -7,6 +7,12 @@ export PYTHONPATH="/Users/logpoint/Documents/Library/pyre2"
 export PATH="$PATH:/usr/local/bin/python"
 alias nb="jupyter notebook"
 
+# Setting up env variables for Splunk
+export SPLUNK_HOME="/Applications/Splunk"
+export SPLUNK_DB="/Applications/Splunk/var/lib/splunk"
+export SPLUNK_ETC="/Applications/Splunk/etc"
+# Useful alias to stop Splunk.
+alias splunked="$SPLUNK_HOME/bin/splunk stop"
 #For toggling view of Desktop Icons in Mac
 alias hide="defaults write com.apple.finder CreateDesktop false && killall Finder"
 alias show="defaults write com.apple.finder CreateDesktop True && killall Finder"
