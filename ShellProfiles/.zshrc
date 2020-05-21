@@ -18,7 +18,7 @@ alias hide="defaults write com.apple.finder CreateDesktop false && killall Finde
 alias show="defaults write com.apple.finder CreateDesktop True && killall Finder"
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
+source /usr/share/autojump/autojump.zsh
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
