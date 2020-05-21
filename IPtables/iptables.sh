@@ -1,10 +1,10 @@
 #!/bin/bash -       
 # title           :     iptables.sh
 # description     :     Script to setup the IPtables rules for hardening the OS.
-# author		  :     me
+# author          :     me
 # date            :     2020-05-21
 # version         :     0.1    
-# usage		      :     ./iptables.sh  (please run as sudo !!)
+# usage           :     ./iptables.sh  (please run as sudo !!)
 #==============================================================================
 
 # Cleaning up the existing rules.
